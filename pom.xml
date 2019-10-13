@@ -7,7 +7,7 @@
     <artifactId>RentCarApp</artifactId>
     <version>1.0-SNAPSHOT</version>
         <properties>
-            <mavenVersion>2.1</mavenVersion>
+            <mavenVersion>2.2.1</mavenVersion>
         </properties>
         <dependencies>
             <dependency>
