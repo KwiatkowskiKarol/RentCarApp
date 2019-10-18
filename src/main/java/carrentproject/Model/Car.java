@@ -1,5 +1,4 @@
-import java.util.*;
-import java.io.*;
+package carrentproject.Model;
 
 public class Car {
     private int id;
