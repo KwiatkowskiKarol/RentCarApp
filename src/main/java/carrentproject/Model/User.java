@@ -4,7 +4,7 @@ public class User {
     private String firstName, lastName, phoneNumber;
     private UserReservation UserReservation;
 
-    public User(long firstName, String lastName, String phoneNumber){
+    public User(String firstName, String lastName, String phoneNumber){
         this.firstName = firstName = "";
         this.lastName = lastName = "";
         this.phoneNumber = phoneNumber = "";

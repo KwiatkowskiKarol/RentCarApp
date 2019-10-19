@@ -35,13 +35,13 @@ public class CrudTest {
     @Before
     public void initList() {
 
-        reservation1.add("Hawai");
-        reservation1.add("Americana");
-        reservation2.add("Wiejska");
-        reservation2.add("Peperoni");
-        reservation3.add("Capriciosa");
-        reservation3.add("Salami");
-        reservation4.add("Mexicana");
+        reservation1.add("Skoda");
+        reservation1.add("VW");
+        reservation2.add("Audi");
+        reservation2.add("Mercedes");
+        reservation3.add("Citroen");
+        reservation3.add("Opel");
+        reservation4.add("Peugeot");
 
 
         repository.collectionAccess().add(new UserReservation(1,reservation1));

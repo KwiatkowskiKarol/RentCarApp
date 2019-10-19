@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Repo/DoRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +44,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="$USER_HOME$/AppData/Roaming/npm/node_modules/grunt-cli" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -75,6 +71,18 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="RentCarApp" />
+      <option name="PACKAGE_NAME" value="carrentproject" />
+      <option name="MAIN_CLASS_NAME" value="carrentproject.CrudTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RentCarApp [test]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -127,6 +135,11 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="showServicesTree" value="false" />
@@ -146,7 +159,7 @@
       <workItem from="1570982132286" duration="4162000" />
       <workItem from="1571077573127" duration="3383000" />
       <workItem from="1571081039321" duration="28000" />
-      <workItem from="1571081516491" duration="7277000" />
+      <workItem from="1571081516491" duration="8822000" />
     </task>
     <servers />
   </component>
