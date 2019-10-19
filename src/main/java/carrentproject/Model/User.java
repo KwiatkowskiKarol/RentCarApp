@@ -3,8 +3,10 @@ package carrentproject.Model;
 public class User {
     private String firstName, lastName, phoneNumber;
     private UserReservation UserReservation;
+    private int id;
 
-    public User(String firstName, String lastName, String phoneNumber){
+    public User(int id, String firstName, String lastName, String phoneNumber){
+        this.id = id;
         this.firstName = firstName = "";
         this.lastName = lastName = "";
         this.phoneNumber = phoneNumber = "";

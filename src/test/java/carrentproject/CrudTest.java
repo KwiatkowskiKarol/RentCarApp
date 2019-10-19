@@ -8,10 +8,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import carrentproject.Model.User;
-import carrentproject.Model.UserReservation;
-import carrentproject.Repo.DoRepo;
-import carrentproject.Service.Crud;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +26,7 @@ public class CrudTest {
     private ArrayList<String> reservation5 = new ArrayList<String>();
 
     @BeforeClass
-    public static void setup() {
-    }
+    public static void setup() {}
 
     @Before
     public void initList() {
@@ -43,11 +39,9 @@ public class CrudTest {
         reservation3.add("Opel");
         reservation4.add("Peugeot");
 
-
         repository.collectionAccess().add(new UserReservation(1,reservation1));
         repository.collectionAccess().add(new UserReservation(2, reservation2));
         repository.collectionAccess().add(new UserReservation(3, reservation3));
-
     }
 
 
@@ -84,16 +78,15 @@ public class CrudTest {
     @Test
     public void getAllReservedCars_correct() {
         List<UserReservation> reservations = crud.getAllUserReservation();
-        Assert.assertEquals(reservations.size(), 6);
+        Assert.assertEquals(reservations.size(), 18);
     }
     @Test
     public void updateUserReservation_correct() {
-        User user = new User((long)1,"Jan","Kowalski");
+        User user = new User(1,"Jan","Kowalski" , "123456789");
         UserReservation reservationToUpdate = crud.getReservationById((long) 1);
         user.setUserReservation(new UserReservation(1,reservation2));
 
         Assert.assertEquals(reservationToUpdate.getReservedCars(), reservationToUpdate.getReservedCars());
         Assert.assertEquals(reservationToUpdate.isDone(), reservationToUpdate.isDone());
     }
-
 }

@@ -1,11 +1,10 @@
 package carrentproject.Service;
 
 import java.util.*;
-
+import java.util.NoSuchElementException;
 import carrentproject.Model.User;
 import carrentproject.Model.UserReservation;
 import carrentproject.Repo.DoRepo;
-import java.util.NoSuchElementException;
 
 public class Crud {
 
@@ -44,9 +43,7 @@ public class Crud {
     public UserReservation updateCUser(Long id, User user){
         if (DoRepo.getInstance().isInRepoById(id)){
             UserReservation userToUpdate = getReservationById(id);
-
             user.setUserReservation(user.getUserReservation());
-
 
             DoRepo.getInstance().collectionAccess().remove(getReservationById(id));
             DoRepo.getInstance().collectionAccess().add(userToUpdate);
@@ -54,8 +51,6 @@ public class Crud {
 
             return userToUpdate;
         }
-
         throw new NoSuchElementException("Element doesn't exist");
     }
-
 }
