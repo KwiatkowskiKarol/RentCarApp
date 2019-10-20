@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
     </list>
@@ -176,7 +160,7 @@
       <workItem from="1570982132286" duration="4162000" />
       <workItem from="1571077573127" duration="3383000" />
       <workItem from="1571081039321" duration="28000" />
-      <workItem from="1571081516491" duration="10940000" />
+      <workItem from="1571081516491" duration="18629000" />
     </task>
     <servers />
   </component>

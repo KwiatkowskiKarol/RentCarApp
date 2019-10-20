@@ -4,15 +4,23 @@ import carrentproject.Model.User;
 import carrentproject.Model.UserReservation;
 import carrentproject.Repo.DoRepo;
 import carrentproject.Service.Crud;
+import javafx.beans.binding.BooleanExpression;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 
+import java.time.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.doReturn;
 
 public class CrudTest {
 
@@ -24,6 +32,7 @@ public class CrudTest {
     private ArrayList<String> reservation3 = new ArrayList<String>();
     private ArrayList<String> reservation4 = new ArrayList<String>();
     private ArrayList<String> reservation5 = new ArrayList<String>();
+
 
     @BeforeClass
     public static void setup() {}

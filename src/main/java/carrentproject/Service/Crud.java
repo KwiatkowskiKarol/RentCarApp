@@ -13,8 +13,8 @@ public class Crud {
 
     public boolean createUserReservation(UserReservation reservation) {
         if (reservation == null) throw new IllegalArgumentException("Object is null");
-
         DoRepo.getInstance().collectionAccess().add(reservation);
+
         return true;
     }
 
@@ -40,15 +40,13 @@ public class Crud {
         return new ArrayList<UserReservation>(DoRepo.getInstance().collectionAccess());
     }
 
-    public UserReservation updateCUser(Long id, User user){
+    public UserReservation updateUser(Long id, User user){
         if (DoRepo.getInstance().isInRepoById(id)){
             UserReservation userToUpdate = getReservationById(id);
             user.setUserReservation(user.getUserReservation());
 
             DoRepo.getInstance().collectionAccess().remove(getReservationById(id));
             DoRepo.getInstance().collectionAccess().add(userToUpdate);
-
-
             return userToUpdate;
         }
         throw new NoSuchElementException("Element doesn't exist");
