@@ -98,7 +98,7 @@ public class CrudTest {
     @Test
     public void getAllReservedCars_correct() {
         List<UserReservation> reservations = crud.getAllUserReservation();
-        Assert.assertEquals(reservations.size(), 26);
+        Assert.assertEquals(reservations.size(), 29);
     }
     @Test
     public void updateUserReservation_correct() {
