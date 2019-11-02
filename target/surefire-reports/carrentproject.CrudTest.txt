@@ -1,4 +1,58 @@
 -------------------------------------------------------------------------------
 Test set: carrentproject.CrudTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in carrentproject.CrudTest
+Tests run: 12, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.379 s <<< FAILURE! - in carrentproject.CrudTest
+setTimesSaveToFalse_correct(carrentproject.CrudTest)  Time elapsed: 0.055 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:145)
+
+getReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:75)
+
+deleteReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:87)
+
+addDateOverAddCollection_correct(carrentproject.CrudTest)  Time elapsed: 0.041 s  <<< ERROR!
+org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
+
+LocalDateTime cannot be returned by getReservationById()
+getReservationById() should return UserReservation
+***
+If you're unsure why you're getting above error read on.
+Due to the nature of the syntax above problem might occur because:
+1. This exception *might* occur in wrongly written multi-threaded tests.
+   Please refer to Mockito FAQ on limitations of concurrency testing.
+2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
+   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
+
+	at carrentproject.CrudTest.addDateOverAddCollection_correct(CrudTest.java:130)
+
+updateUserReservation_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:104)
+
+updateDateOverUpdateObject_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:137)
+
+readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
+
+LocalDateTime cannot be returned by getReservationById()
+getReservationById() should return UserReservation
+***
+If you're unsure why you're getting above error read on.
+Due to the nature of the syntax above problem might occur because:
+1. This exception *might* occur in wrongly written multi-threaded tests.
+   Please refer to Mockito FAQ on limitations of concurrency testing.
+2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
+   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
+
+	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:115)
+
+getTimesByCustomerReservationId_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.getTimesByCustomerReservationId_correct(CrudTest.java:120)
+

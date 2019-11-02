@@ -1,11 +1,12 @@
 package carrentproject.Model;
 
-public class User {
+public class User{
     private String firstName, lastName, phoneNumber;
     private UserReservation UserReservation;
-    private int id;
+    private Long id;
+    private User(){}
 
-    public User(int id, String firstName, String lastName, String phoneNumber){
+    public User(Long id, String firstName, String lastName, String phoneNumber){
         this.id = id;
         this.firstName = firstName = "";
         this.lastName = lastName = "";
@@ -29,5 +30,4 @@ public class User {
     public void setUserReservation(UserReservation userReservation) {
         this.UserReservation = userReservation;
     }
-
 }

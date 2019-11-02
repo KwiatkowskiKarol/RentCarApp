@@ -2,30 +2,38 @@ package carrentproject;
 
 import carrentproject.Model.User;
 import carrentproject.Model.UserReservation;
+import carrentproject.Model.UserReservationDate;
 import carrentproject.Repo.DoRepo;
 import carrentproject.Service.Crud;
-import javafx.beans.binding.BooleanExpression;
+import carrentproject.Service.Factory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.when;
+import org.mockito.runners.MockitoJUnitRunner;
 
-
-import java.time.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.time.LocalDateTime;
+@RunWith(MockitoJUnitRunner.class)
 
-import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.doReturn;
 
 public class CrudTest {
 
     private DoRepo repository = DoRepo.getInstance();
     private Crud crud = new Crud();
+
+    @Mock
+    private UserReservationDate userReservationDateMock;
+    @Mock
+    private Crud crudMock;
+    @Mock
+    private UserReservation reservationMock;
 
     private ArrayList<String> reservation1 = new ArrayList<String>();
     private ArrayList<String> reservation2 = new ArrayList<String>();
@@ -33,6 +41,7 @@ public class CrudTest {
     private ArrayList<String> reservation4 = new ArrayList<String>();
     private ArrayList<String> reservation5 = new ArrayList<String>();
 
+    private UserReservation userReservation;
 
     @BeforeClass
     public static void setup() {}
@@ -87,15 +96,57 @@ public class CrudTest {
     @Test
     public void getAllReservedCars_correct() {
         List<UserReservation> reservations = crud.getAllUserReservation();
-        Assert.assertEquals(reservations.size(), 18);
+        Assert.assertEquals(reservations.size(), 26);
     }
     @Test
     public void updateUserReservation_correct() {
-        User user = new User(1,"Jan","Kowalski" , "123456789");
+        User user = new User((long) 1,"Jan","Kowalski" , "123456789");
         UserReservation reservationToUpdate = crud.getReservationById((long) 1);
         user.setUserReservation(new UserReservation(1,reservation2));
 
         Assert.assertEquals(reservationToUpdate.getReservedCars(), reservationToUpdate.getReservedCars());
-        Assert.assertEquals(reservationToUpdate.isDone(), reservationToUpdate.isDone());
+    }
+    //Tests LAB2 Mockito
+
+    @Test
+    public void readDataOnGetObject_correct() {
+        LocalDateTime time = LocalDateTime.now();
+        when(crudMock.getReservationById((long)1)).thenReturn(reservationMock);
+        when(crudMock.getReservationById((long)1).getLastReadTime()).thenReturn(time);
+
+        Assert.assertEquals(crud.getReservationById((long) 1).getLastReadTime(), time);
+    }
+    @Test
+    public void getTimesByUserrReservationId_correct() { crud.getReservationById((long) 1);
+
+    }
+
+    @Test
+    public void addDateOverAddCollection_correct() {
+        crud.createUserReservation(Factory.create((17),reservation1));
+        LocalDateTime time = LocalDateTime.now();
+
+        when(crudMock.getReservationById((long)17)).thenReturn(reservationMock);
+        when(crudMock.getReservationById((long)17).getLastReadTime()).thenReturn(time);
+    }
+    @Test
+    public void updateDateOverUpdateObject_correct() {
+        LocalDateTime time = LocalDateTime.now();
+        when (userReservationDateMock.getUpdateTime()).thenReturn(time);
+
+        UserReservation reservation = crud.updateUser((long) 1, crud.getReservationById((long) 2));
+        Mockito.timeout(1500);
+        Assert.assertEquals(userReservationDateMock.getUpdateTime(), time);
+    }
+    @Test
+    public void setTimesSaveToFalse_correct() {
+        UserReservation reservationWithFalse = repository.collectionAccess().get(1);
+        reservationWithFalse.setRecordTimes(false);
+        crud.updateUser(reservationWithFalse.getReservationId(), reservationWithFalse);
+        Mockito.timeout(1500);
+
+        List<UserReservation> allUserReservatio = crud.getAllUserReservation();
+
+        Assert.assertEquals(3 , allUserReservatio.stream().filter(x -> x.getLastReadTime() == reservationWithFalse.getLastReadTime()).count());
     }
 }

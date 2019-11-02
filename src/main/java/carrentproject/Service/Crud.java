@@ -1,9 +1,13 @@
 package carrentproject.Service;
 
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.NoSuchElementException;
+
 import carrentproject.Model.User;
 import carrentproject.Model.UserReservation;
+import carrentproject.Model.UserReservationDate;
+import carrentproject.Model.UserReservationList;
 import carrentproject.Repo.DoRepo;
 
 public class Crud {
@@ -22,10 +26,10 @@ public class Crud {
         if (DoRepo.getInstance().isInRepoById(id)) {
             Optional<UserReservation> optionalUserReservation = DoRepo.getInstance().getReservationById(id);
             if (optionalUserReservation.isPresent()) {
-                return optionalUserReservation.get();
+                return (UserReservationList) optionalUserReservation.get();
             }
         }
-        throw new NoSuchElementException("Element doesn't exist");
+        throw new NoSuchElementException("Element with this id not exist");
     }
 
     public boolean deleteUserReservation (Long id) {
@@ -40,15 +44,26 @@ public class Crud {
         return new ArrayList<UserReservation>(DoRepo.getInstance().collectionAccess());
     }
 
-    public UserReservation updateUser(Long id, User user){
+    public UserReservation updateUser(Long id, UserReservation userReservation){
         if (DoRepo.getInstance().isInRepoById(id)){
             UserReservation userToUpdate = getReservationById(id);
-            user.setUserReservation(user.getUserReservation());
+
+            userToUpdate.setReservationCarUser.getReservedCars();
+            userToUpdate.setRecordTimes(UserReservationList.isRecordTimes());
+
+            if (UserReservationList.isRecordTimes()) {
+                userToUpdate.setUpdateTime(LocalDateTime.now());
+                userToUpdate.setLastReadTime(UserReservationList.getLastReadTime());
+            }
 
             DoRepo.getInstance().collectionAccess().remove(getReservationById(id));
             DoRepo.getInstance().collectionAccess().add(userToUpdate);
             return userToUpdate;
         }
         throw new NoSuchElementException("Element doesn't exist");
+    }
+
+    public UserReservationDate getTimeById(long id){
+        return new UserReservationDate().create((UserReservationList) getReservationById(id));
     }
 }
