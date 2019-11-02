@@ -13,6 +13,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 import org.mockito.runners.MockitoJUnitRunner;
 
@@ -111,8 +113,9 @@ public class CrudTest {
     @Test
     public void readDataOnGetObject_correct() {
         LocalDateTime time = LocalDateTime.now();
-        when(crudMock.getReservationById((long)1)).thenReturn(reservationMock);
+        doReturn(reservationMock).when(crudMock).getReservationById((long)1);
         when(crudMock.getReservationById((long)1).getLastReadTime()).thenReturn(time);
+        //doReturn(time).when(crudMock).getLastReadTime();
 
         Assert.assertEquals(crud.getReservationById((long) 1).getLastReadTime(), time);
     }
@@ -127,7 +130,8 @@ public class CrudTest {
         LocalDateTime time = LocalDateTime.now();
 
         when(crudMock.getReservationById((long)17)).thenReturn(reservationMock);
-        when(crudMock.getReservationById((long)17).getLastReadTime()).thenReturn(time);
+        doReturn(reservationMock).when(crudMock).getReservationById((long)17);
+        //when(crudMock.getReservationById((long)17).getLastReadTime()).thenReturn(time);
     }
     @Test
     public void updateDateOverUpdateObject_correct() {

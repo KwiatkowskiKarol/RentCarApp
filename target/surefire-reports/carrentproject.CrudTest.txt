@@ -1,43 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: carrentproject.CrudTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.379 s <<< FAILURE! - in carrentproject.CrudTest
-setTimesSaveToFalse_correct(carrentproject.CrudTest)  Time elapsed: 0.055 s  <<< ERROR!
+Tests run: 12, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.327 s <<< FAILURE! - in carrentproject.CrudTest
+setTimesSaveToFalse_correct(carrentproject.CrudTest)  Time elapsed: 0.049 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:145)
+	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:149)
+
+getTimesByUserrReservationId_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.getTimesByUserrReservationId_correct(CrudTest.java:123)
 
 getReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:75)
+	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:77)
 
-deleteReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+deleteReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:87)
-
-addDateOverAddCollection_correct(carrentproject.CrudTest)  Time elapsed: 0.041 s  <<< ERROR!
-org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
-
-LocalDateTime cannot be returned by getReservationById()
-getReservationById() should return UserReservation
-***
-If you're unsure why you're getting above error read on.
-Due to the nature of the syntax above problem might occur because:
-1. This exception *might* occur in wrongly written multi-threaded tests.
-   Please refer to Mockito FAQ on limitations of concurrency testing.
-2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
-   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
-
-	at carrentproject.CrudTest.addDateOverAddCollection_correct(CrudTest.java:130)
+	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:89)
 
 updateUserReservation_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:104)
+	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:106)
 
-updateDateOverUpdateObject_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+updateDateOverUpdateObject_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:137)
+	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:141)
 
-readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0.003 s  <<< ERROR!
 org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
 
 LocalDateTime cannot be returned by getReservationById()
@@ -50,9 +39,5 @@ Due to the nature of the syntax above problem might occur because:
 2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
    - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
 
-	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:115)
-
-getTimesByCustomerReservationId_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getTimesByCustomerReservationId_correct(CrudTest.java:120)
+	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:117)
 

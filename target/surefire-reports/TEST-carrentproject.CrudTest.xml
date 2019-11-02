@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.379" tests="12" errors="8" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.327" tests="12" errors="7" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire7815199318794584537\surefirebooter8119450916248265864.jar C:\Users\Asus\AppData\Local\Temp\surefire7815199318794584537 2019-11-02T23-00-44_403-jvmRun1 surefire2348957263703694426tmp surefire_04620133565169597470tmp"/>
+    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398\surefirebooter8049220007037114083.jar C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398 2019-11-02T23-15-03_203-jvmRun1 surefire4844549096057223788tmp surefire_06012562932863048325tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Asus"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire7815199318794584537\surefirebooter8119450916248265864.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398\surefirebooter8049220007037114083.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,52 +61,42 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.055">
+  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.049">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:145)
+	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:149)
+</error>
+  </testcase>
+  <testcase name="getTimesByUserrReservationId_correct" classname="carrentproject.CrudTest" time="0">
+    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.getTimesByUserrReservationId_correct(CrudTest.java:123)
 </error>
   </testcase>
   <testcase name="getReservedCarsById_correct" classname="carrentproject.CrudTest" time="0">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:75)
+	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:77)
 </error>
   </testcase>
-  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0">
+  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0.001">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:87)
+	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:89)
 </error>
   </testcase>
   <testcase name="addReservedCars_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="deleteReservedCars_no_element" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="addDateOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.041">
-    <error message="&#10;LocalDateTime cannot be returned by getReservationById()&#10;getReservationById() should return UserReservation&#10;***&#10;If you&apos;re unsure why you&apos;re getting above error read on.&#10;Due to the nature of the syntax above problem might occur because:&#10;1. This exception *might* occur in wrongly written multi-threaded tests.&#10;   Please refer to Mockito FAQ on limitations of concurrency testing.&#10;2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - &#10;   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.&#10;" type="org.mockito.exceptions.misusing.WrongTypeOfReturnValue">org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
-
-LocalDateTime cannot be returned by getReservationById()
-getReservationById() should return UserReservation
-***
-If you're unsure why you're getting above error read on.
-Due to the nature of the syntax above problem might occur because:
-1. This exception *might* occur in wrongly written multi-threaded tests.
-   Please refer to Mockito FAQ on limitations of concurrency testing.
-2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
-   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
-
-	at carrentproject.CrudTest.addDateOverAddCollection_correct(CrudTest.java:130)
-</error>
-  </testcase>
+  <testcase name="deleteReservedCars_no_element" classname="carrentproject.CrudTest" time="0.001"/>
+  <testcase name="addDateOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.026"/>
   <testcase name="updateUserReservation_correct" classname="carrentproject.CrudTest" time="0.001">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:104)
+	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:106)
 </error>
   </testcase>
   <testcase name="getAllReservedCars_correct" classname="carrentproject.CrudTest" time="0"/>
   <testcase name="getReservationById_NoSuchElementException_expected" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="updateDateOverUpdateObject_correct" classname="carrentproject.CrudTest" time="0.001">
+  <testcase name="updateDateOverUpdateObject_correct" classname="carrentproject.CrudTest" time="0">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:137)
+	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:141)
 </error>
   </testcase>
-  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0.001">
+  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0.003">
     <error message="&#10;LocalDateTime cannot be returned by getReservationById()&#10;getReservationById() should return UserReservation&#10;***&#10;If you&apos;re unsure why you&apos;re getting above error read on.&#10;Due to the nature of the syntax above problem might occur because:&#10;1. This exception *might* occur in wrongly written multi-threaded tests.&#10;   Please refer to Mockito FAQ on limitations of concurrency testing.&#10;2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - &#10;   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.&#10;" type="org.mockito.exceptions.misusing.WrongTypeOfReturnValue">org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
 
 LocalDateTime cannot be returned by getReservationById()
@@ -119,12 +109,7 @@ Due to the nature of the syntax above problem might occur because:
 2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
    - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
 
-	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:115)
-</error>
-  </testcase>
-  <testcase name="getTimesByCustomerReservationId_correct" classname="carrentproject.CrudTest" time="0">
-    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getTimesByCustomerReservationId_correct(CrudTest.java:120)
+	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:117)
 </error>
   </testcase>
 </testsuite>
