@@ -1,17 +1,16 @@
 package carrentproject.Service;
 
-import java.time.LocalDateTime;
-import java.util.*;
-import java.util.NoSuchElementException;
-
 import carrentproject.Model.UserReservation;
 import carrentproject.Model.UserReservationDate;
-import carrentproject.Model.UserReservationList;
 import carrentproject.Repo.DoRepo;
+
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class Crud {
 
     public Crud() {
+//Make crud Service
     }
 
     public boolean createUserReservation(UserReservation reservation) {
@@ -21,7 +20,7 @@ public class Crud {
         return true;
     }
 
-    public UserReservationList getReservationById(Long id) {
+    public UserReservation getReservationById(Long id) {
         if (DoRepo.getInstance().isInRepoById(id)) {
 
             Optional<UserReservation> optionalUserReservation = DoRepo.getInstance().getReservationById(id);
@@ -30,7 +29,7 @@ public class Crud {
                 if (userReservation.isRecordTimes()){
                     userReservation.setLastReadTime(LocalDateTime.now());
                 }
-                return (UserReservationList) optionalUserReservation.get();
+                return optionalUserReservation.get();
             }
         }
         throw new NoSuchElementException("Element doesn't exist");
@@ -48,16 +47,16 @@ public class Crud {
         return new ArrayList<UserReservation>(DoRepo.getInstance().collectionAccess());
     }
 
-    public UserReservation updateUser(Long id, UserReservation User){
+    public UserReservation updateUser(Long id, UserReservation user){
         if (DoRepo.getInstance().isInRepoById(id)){
             UserReservation userToUpdate = getReservationById(id);
 
-            userToUpdate.setReservedCars(User.getReservedCars());
-            userToUpdate.setRecordTimes(User.isRecordTimes());
+            userToUpdate.setReservedCars(user.getReservedCars());
+            userToUpdate.setRecordTimes(user.isRecordTimes());
 
-            if (User.isRecordTimes()) {
+            if (user.isRecordTimes()) {
                 userToUpdate.setUpdateTime(LocalDateTime.now());
-                userToUpdate.setLastReadTime(User.getLastReadTime());
+                userToUpdate.setLastReadTime(user.getLastReadTime());
             }
 
 

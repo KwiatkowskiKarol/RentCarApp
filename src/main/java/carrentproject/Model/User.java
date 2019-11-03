@@ -1,36 +1,52 @@
 package carrentproject.Model;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-
-public class User{
-    private String firstName, lastName, phoneNumber;
-    private UserReservation UserReservation;
+public class User {
     private Long id;
-    private User(){}
+    private String name;
+    private String surname;
+    private UserReservation userReservation;
 
-    public User(Long id, String firstName, String lastName, String phoneNumber){
+
+    public User() {
+
+    }
+
+    public User (Long id, String name, String surname){
         this.id = id;
-        this.firstName = firstName = "";
-        this.lastName = lastName = "";
-        this.phoneNumber = phoneNumber = "";
-        this.UserReservation = new UserReservation();
+        this.name = name;
+        this.surname = surname;
+        this.userReservation = new UserReservation();
     }
 
-    public String getFirstName(){
-        return firstName;
+    public Long getId() {
+        return id;
     }
-    public String getLastName(){
-        return lastName;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    public String getPhoneNumber(){
-        return phoneNumber;
+
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     public UserReservation getUserReservation() {
-        return UserReservation;
+        return userReservation;
     }
 
     public void setUserReservation(UserReservation userReservation) {
-        this.UserReservation = userReservation;
+        this.userReservation = userReservation;
     }
 }

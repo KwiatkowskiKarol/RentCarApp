@@ -5,7 +5,9 @@ import carrentproject.Model.UserReservation;
 import java.util.ArrayList;
 
 public class Factory {
-    public static UserReservation create(long id, ArrayList<String> reservationName){
+
+    public static UserReservation create(long id, ArrayList<String> reservationName) {
         return new UserReservation(id, reservationName);
+
     }
 }

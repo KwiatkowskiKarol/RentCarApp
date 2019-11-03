@@ -3,7 +3,6 @@ package carrentproject;
 import carrentproject.Model.User;
 import carrentproject.Model.UserReservation;
 import carrentproject.Model.UserReservationDate;
-import carrentproject.Model.UserReservationList;
 import carrentproject.Repo.DoRepo;
 import carrentproject.Service.Crud;
 import carrentproject.Service.Factory;
@@ -12,11 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
-
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -49,7 +46,6 @@ public class CrudTest {
 
     @Before
     public void initList() {
-
         reservation1.add("Skoda");
         reservation1.add("VW");
         reservation2.add("Audi");
@@ -97,19 +93,18 @@ public class CrudTest {
     @Test
     public void getAllReservedCars_correct() {
         List<UserReservation> reservations = crud.getAllUserReservation();
-        Assert.assertEquals(reservations.size(), 29);
+        Assert.assertEquals(reservations.size(), 28);
     }
     @Test
     public void updateUserReservation_correct() {
-        User user = new User((long) 1,"Jan","Kowalski" , "123456789");
+        User user = new User((long)1,"Jan","Kowalski");
         UserReservation reservationToUpdate = crud.getReservationById((long) 1);
         user.setUserReservation(new UserReservation(1,reservation2));
 
         Assert.assertEquals(reservationToUpdate.getReservedCars(), reservationToUpdate.getReservedCars());
     }
-    //Mock
     @Test
-    public void readDateOnGetObject_correct() {
+    public void readDataOnGetObject_correct() {
         LocalDateTime time = LocalDateTime.now();
         when(crudMock.getReservationById((long)1)).thenReturn(reservationMock);
         when(crudMock.getReservationById((long)1).getLastReadTime()).thenReturn(time);
@@ -117,12 +112,13 @@ public class CrudTest {
         Assert.assertEquals(crudMock.getReservationById((long) 1).getLastReadTime(), time);
     }
     @Test
-    public void getTimesByUserId_correct() {
+    public void getTimesByUserReservationId_correct() {
         Assert.assertNotNull((crud.getReservationById((long)1)));
+
     }
 
     @Test
-    public void addDataOverAddCollection_correct() {
+    public void addDateOverAddCollection_correct() {
         crud.createUserReservation(Factory.create((30),reservation5));
         LocalDateTime time = LocalDateTime.now();
 
@@ -149,4 +145,6 @@ public class CrudTest {
         List<UserReservation> allUserReservation = crud.getAllUserReservation();
         Assert.assertEquals(3 , allUserReservation.stream().filter(x -> x.getLastReadTime() == reservationWithFalse.getLastReadTime()).count());
     }
+
+
 }
