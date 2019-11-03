@@ -1,11 +1,11 @@
 package carrentproject.Model;
 
 public class Car {
-    private int id;
+    private Long id;
     private String carBrand, carModel;
     private double carPrice;
 
-    public int id(){
+    public Long id(){
         return id;
     }
     public String getCarType(){

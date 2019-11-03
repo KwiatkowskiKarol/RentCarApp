@@ -1,43 +1,74 @@
 -------------------------------------------------------------------------------
 Test set: carrentproject.CrudTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.327 s <<< FAILURE! - in carrentproject.CrudTest
-setTimesSaveToFalse_correct(carrentproject.CrudTest)  Time elapsed: 0.049 s  <<< ERROR!
+Tests run: 14, Failures: 1, Errors: 10, Skipped: 0, Time elapsed: 0.32 s <<< FAILURE! - in carrentproject.CrudTest
+setTimesSaveToFalse_correct(carrentproject.CrudTest)  Time elapsed: 0.046 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:149)
-
-getTimesByUserrReservationId_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getTimesByUserrReservationId_correct(CrudTest.java:123)
+	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:146)
 
 getReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:77)
+	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:76)
 
-deleteReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+deleteReservedCarsById_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:89)
+	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:88)
 
-updateUserReservation_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+addDataOverAddCollection_correct(carrentproject.CrudTest)  Time elapsed: 0.028 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.addDataOverAddCollection_correct(CrudTest.java:129)
+
+addDataOverAddCollection_correct(carrentproject.CrudTest)  Time elapsed: 0.029 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnfinishedStubbingException: 
+
+Unfinished stubbing detected here:
+-> at carrentproject.CrudTest.addDataOverAddCollection_correct(CrudTest.java:129)
+
+E.g. thenReturn() may be missing.
+Examples of correct stubbing:
+    when(mock.isOk()).thenReturn(true);
+    when(mock.isOk()).thenThrow(exception);
+    doThrow(exception).when(mock).someVoidMethod();
+Hints:
+ 1. missing thenReturn()
+ 2. you are trying to stub a final method, you naughty developer!
+ 3: you are stubbing the behaviour of another mock inside before 'thenReturn' instruction if completed
+
+
+updateUserReservation_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:106)
+	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:105)
 
-updateDateOverUpdateObject_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+getAllReservedCars_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<26> but was:<29>
+	at carrentproject.CrudTest.getAllReservedCars_correct(CrudTest.java:100)
+
+getTimesByUserrderId_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:141)
+	at carrentproject.CrudTest.getTimesByUserrderId_correct(CrudTest.java:120)
 
-readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0.003 s  <<< ERROR!
-org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
+updateDateOverUpdateObject_correct(carrentproject.CrudTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:138)
 
-LocalDateTime cannot be returned by getReservationById()
-getReservationById() should return UserReservation
-***
-If you're unsure why you're getting above error read on.
-Due to the nature of the syntax above problem might occur because:
-1. This exception *might* occur in wrongly written multi-threaded tests.
-   Please refer to Mockito FAQ on limitations of concurrency testing.
-2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
-   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
+readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.ClassCastException: carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:113)
 
-	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:117)
+readDataOnGetObject_correct(carrentproject.CrudTest)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnfinishedStubbingException: 
+
+Unfinished stubbing detected here:
+-> at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:113)
+
+E.g. thenReturn() may be missing.
+Examples of correct stubbing:
+    when(mock.isOk()).thenReturn(true);
+    when(mock.isOk()).thenThrow(exception);
+    doThrow(exception).when(mock).someVoidMethod();
+Hints:
+ 1. missing thenReturn()
+ 2. you are trying to stub a final method, you naughty developer!
+ 3: you are stubbing the behaviour of another mock inside before 'thenReturn' instruction if completed
+
 

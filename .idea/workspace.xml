@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +172,8 @@
       <workItem from="1571081516491" duration="20255000" />
       <workItem from="1571573700922" duration="1366000" />
       <workItem from="1572469203511" duration="785000" />
-      <workItem from="1572722339241" duration="11238000" />
+      <workItem from="1572722339241" duration="12048000" />
+      <workItem from="1572734423852" duration="7620000" />
     </task>
     <servers />
   </component>

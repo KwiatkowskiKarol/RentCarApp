@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.327" tests="12" errors="7" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.32" tests="14" errors="10" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
+    <property name="java.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398\surefirebooter8049220007037114083.jar C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398 2019-11-02T23-15-03_203-jvmRun1 surefire4844549096057223788tmp surefire_06012562932863048325tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
+    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire5369061428771069483\surefirebooter7756946829860423667.jar C:\Users\Asus\AppData\Local\Temp\surefire5369061428771069483 2019-11-03T01-27-45_223-jvmRun1 surefire1075314120513654723tmp surefire_01581858876203094287tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Asus"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire3988134981257206398\surefirebooter8049220007037114083.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire5369061428771069483\surefirebooter7756946829860423667.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,55 +61,88 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.049">
+  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.046">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:149)
-</error>
-  </testcase>
-  <testcase name="getTimesByUserrReservationId_correct" classname="carrentproject.CrudTest" time="0">
-    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getTimesByUserrReservationId_correct(CrudTest.java:123)
+	at carrentproject.CrudTest.setTimesSaveToFalse_correct(CrudTest.java:146)
 </error>
   </testcase>
   <testcase name="getReservedCarsById_correct" classname="carrentproject.CrudTest" time="0">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:77)
+	at carrentproject.CrudTest.getReservedCarsById_correct(CrudTest.java:76)
 </error>
   </testcase>
-  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0.001">
+  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:89)
+	at carrentproject.CrudTest.deleteReservedCarsById_correct(CrudTest.java:88)
 </error>
   </testcase>
   <testcase name="addReservedCars_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="deleteReservedCars_no_element" classname="carrentproject.CrudTest" time="0.001"/>
-  <testcase name="addDateOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.026"/>
-  <testcase name="updateUserReservation_correct" classname="carrentproject.CrudTest" time="0.001">
-    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:106)
+  <testcase name="deleteReservedCars_no_element" classname="carrentproject.CrudTest" time="0"/>
+  <testcase name="addDataOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.028">
+    <error message="carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.addDataOverAddCollection_correct(CrudTest.java:129)
 </error>
   </testcase>
-  <testcase name="getAllReservedCars_correct" classname="carrentproject.CrudTest" time="0"/>
+  <testcase name="addDataOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.029">
+    <error message="&#10;Unfinished stubbing detected here:&#10;-&gt; at carrentproject.CrudTest.addDataOverAddCollection_correct(CrudTest.java:129)&#10;&#10;E.g. thenReturn() may be missing.&#10;Examples of correct stubbing:&#10;    when(mock.isOk()).thenReturn(true);&#10;    when(mock.isOk()).thenThrow(exception);&#10;    doThrow(exception).when(mock).someVoidMethod();&#10;Hints:&#10; 1. missing thenReturn()&#10; 2. you are trying to stub a final method, you naughty developer!&#10; 3: you are stubbing the behaviour of another mock inside before &apos;thenReturn&apos; instruction if completed&#10;" type="org.mockito.exceptions.misusing.UnfinishedStubbingException">org.mockito.exceptions.misusing.UnfinishedStubbingException: 
+
+Unfinished stubbing detected here:
+-> at carrentproject.CrudTest.addDataOverAddCollection_correct(CrudTest.java:129)
+
+E.g. thenReturn() may be missing.
+Examples of correct stubbing:
+    when(mock.isOk()).thenReturn(true);
+    when(mock.isOk()).thenThrow(exception);
+    doThrow(exception).when(mock).someVoidMethod();
+Hints:
+ 1. missing thenReturn()
+ 2. you are trying to stub a final method, you naughty developer!
+ 3: you are stubbing the behaviour of another mock inside before 'thenReturn' instruction if completed
+
+</error>
+  </testcase>
+  <testcase name="updateUserReservation_correct" classname="carrentproject.CrudTest" time="0">
+    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.updateUserReservation_correct(CrudTest.java:105)
+</error>
+  </testcase>
+  <testcase name="getAllReservedCars_correct" classname="carrentproject.CrudTest" time="0">
+    <failure message="expected:&lt;26&gt; but was:&lt;29&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<26> but was:<29>
+	at carrentproject.CrudTest.getAllReservedCars_correct(CrudTest.java:100)
+]]></failure>
+  </testcase>
+  <testcase name="getTimesByUserrderId_correct" classname="carrentproject.CrudTest" time="0">
+    <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.getTimesByUserrderId_correct(CrudTest.java:120)
+</error>
+  </testcase>
   <testcase name="getReservationById_NoSuchElementException_expected" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="updateDateOverUpdateObject_correct" classname="carrentproject.CrudTest" time="0">
+  <testcase name="updateDateOverUpdateObject_correct" classname="carrentproject.CrudTest" time="0.003">
     <error message="carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation cannot be cast to carrentproject.Model.UserReservationList
-	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:141)
+	at carrentproject.CrudTest.updateDateOverUpdateObject_correct(CrudTest.java:138)
 </error>
   </testcase>
-  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0.003">
-    <error message="&#10;LocalDateTime cannot be returned by getReservationById()&#10;getReservationById() should return UserReservation&#10;***&#10;If you&apos;re unsure why you&apos;re getting above error read on.&#10;Due to the nature of the syntax above problem might occur because:&#10;1. This exception *might* occur in wrongly written multi-threaded tests.&#10;   Please refer to Mockito FAQ on limitations of concurrency testing.&#10;2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - &#10;   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.&#10;" type="org.mockito.exceptions.misusing.WrongTypeOfReturnValue">org.mockito.exceptions.misusing.WrongTypeOfReturnValue: 
+  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0">
+    <error message="carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList" type="java.lang.ClassCastException">java.lang.ClassCastException: carrentproject.Model.UserReservation$$EnhancerByMockitoWithCGLIB$$6e1f32a2 cannot be cast to carrentproject.Model.UserReservationList
+	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:113)
+</error>
+  </testcase>
+  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0.001">
+    <error message="&#10;Unfinished stubbing detected here:&#10;-&gt; at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:113)&#10;&#10;E.g. thenReturn() may be missing.&#10;Examples of correct stubbing:&#10;    when(mock.isOk()).thenReturn(true);&#10;    when(mock.isOk()).thenThrow(exception);&#10;    doThrow(exception).when(mock).someVoidMethod();&#10;Hints:&#10; 1. missing thenReturn()&#10; 2. you are trying to stub a final method, you naughty developer!&#10; 3: you are stubbing the behaviour of another mock inside before &apos;thenReturn&apos; instruction if completed&#10;" type="org.mockito.exceptions.misusing.UnfinishedStubbingException">org.mockito.exceptions.misusing.UnfinishedStubbingException: 
 
-LocalDateTime cannot be returned by getReservationById()
-getReservationById() should return UserReservation
-***
-If you're unsure why you're getting above error read on.
-Due to the nature of the syntax above problem might occur because:
-1. This exception *might* occur in wrongly written multi-threaded tests.
-   Please refer to Mockito FAQ on limitations of concurrency testing.
-2. A spy is stubbed using when(spy.foo()).then() syntax. It is safer to stub spies - 
-   - with doReturn|Throw() family of methods. More in javadocs for Mockito.spy() method.
+Unfinished stubbing detected here:
+-> at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:113)
 
-	at carrentproject.CrudTest.readDataOnGetObject_correct(CrudTest.java:117)
+E.g. thenReturn() may be missing.
+Examples of correct stubbing:
+    when(mock.isOk()).thenReturn(true);
+    when(mock.isOk()).thenThrow(exception);
+    doThrow(exception).when(mock).someVoidMethod();
+Hints:
+ 1. missing thenReturn()
+ 2. you are trying to stub a final method, you naughty developer!
+ 3: you are stubbing the behaviour of another mock inside before 'thenReturn' instruction if completed
+
 </error>
   </testcase>
 </testsuite>

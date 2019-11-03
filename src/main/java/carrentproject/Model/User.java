@@ -1,5 +1,8 @@
 package carrentproject.Model;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
 public class User{
     private String firstName, lastName, phoneNumber;
     private UserReservation UserReservation;

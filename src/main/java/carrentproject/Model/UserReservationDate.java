@@ -18,9 +18,7 @@ public class UserReservationDate {
         return new UserReservationDate(reservation.getExecutionTime(), reservation.getUpdateTime(),reservation.getLastReadTime());
     }
 
-    public LocalDateTime getExecutionTime(){
-        return executionTime;
-    }
+    public LocalDateTime getExecutionTime(){ return executionTime;}
     public LocalDateTime getUpdateTime(){
         return updateTime;
     }
