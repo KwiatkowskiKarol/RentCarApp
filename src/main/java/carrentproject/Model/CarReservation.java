@@ -5,7 +5,7 @@ import carrentproject.Model.User;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class UserReservation {
+public class CarReservation {
     private long reservationId;
     private ArrayList<String> reservedCars;
     private LocalDateTime executionTime;
@@ -14,11 +14,11 @@ public class UserReservation {
     private User user;
     private boolean recordTimes;
 
-    public UserReservation(){
+    public CarReservation(){
 
     }
 
-    public UserReservation(long id, ArrayList<String> reservedCars) {
+    public CarReservation(long id, ArrayList<String> reservedCars) {
         this.reservationId = id;
         this.reservedCars = reservedCars;
         this.executionTime = LocalDateTime.now();

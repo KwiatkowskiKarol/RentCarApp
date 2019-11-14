@@ -1,7 +1,7 @@
 package carrentproject.Service;
 
-import carrentproject.Model.UserReservation;
-import carrentproject.Model.UserReservationDate;
+import carrentproject.Model.CarReservation;
+import carrentproject.Model.CarReservationDate;
 import carrentproject.Repo.DoRepo;
 
 import java.time.LocalDateTime;
@@ -13,21 +13,21 @@ public class Crud {
 //Make crud Service
     }
 
-    public boolean createUserReservation(UserReservation reservation) {
+    public boolean createUserReservation(CarReservation reservation) {
         if (reservation == null) throw new IllegalArgumentException("Object is null");
 
         DoRepo.getInstance().collectionAccess().add(reservation);
         return true;
     }
 
-    public UserReservation getReservationById(Long id) {
+    public CarReservation getReservationById(Long id) {
         if (DoRepo.getInstance().isInRepoById(id)) {
 
-            Optional<UserReservation> optionalUserReservation = DoRepo.getInstance().getReservationById(id);
+            Optional<CarReservation> optionalUserReservation = DoRepo.getInstance().getReservationById(id);
             if (optionalUserReservation.isPresent()) {
-                UserReservation userReservation = optionalUserReservation.get();
-                if (userReservation.isRecordTimes()){
-                    userReservation.setLastReadTime(LocalDateTime.now());
+                CarReservation carReservation = optionalUserReservation.get();
+                if (carReservation.isRecordTimes()){
+                    carReservation.setLastReadTime(LocalDateTime.now());
                 }
                 return optionalUserReservation.get();
             }
@@ -43,13 +43,13 @@ public class Crud {
         return false;
     }
 
-    public List<UserReservation> getAllUserReservation() {
-        return new ArrayList<UserReservation>(DoRepo.getInstance().collectionAccess());
+    public List<CarReservation> getAllUserReservation() {
+        return new ArrayList<CarReservation>(DoRepo.getInstance().collectionAccess());
     }
 
-    public UserReservation updateUser(Long id, UserReservation user){
+    public CarReservation updateUser(Long id, CarReservation user){
         if (DoRepo.getInstance().isInRepoById(id)){
-            UserReservation userToUpdate = getReservationById(id);
+            CarReservation userToUpdate = getReservationById(id);
 
             userToUpdate.setReservedCars(user.getReservedCars());
             userToUpdate.setRecordTimes(user.isRecordTimes());
@@ -70,8 +70,8 @@ public class Crud {
         throw new NoSuchElementException("Element doesn't exist");
     }
 
-    public UserReservationDate getTimeById(long id) {
-        return new UserReservationDate().create((getReservationById(id)));
+    public CarReservationDate getTimeById(long id) {
+        return new CarReservationDate().create((getReservationById(id)));
     }
 
 }

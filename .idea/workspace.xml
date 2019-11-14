@@ -2,17 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Asus.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/UserSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/car.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservationDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservationList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Repo/DoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Repo/DoRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservationDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservationList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +65,7 @@
   <component name="ProjectId" id="1RpAm5mBuJq46UaY4GMOnrzuW2N" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -56,12 +73,15 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/carrentproject" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3873563" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\src\main\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="carrentproject" />
       <recent name="Service" />
@@ -80,7 +100,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CarTest">
+    <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RentCarApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carrentproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carrentproject" />
+      <option name="MAIN_CLASS_NAME" value="carrentproject.CarTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="RentCarApp" />
       <option name="PACKAGE_NAME" value="carrentproject" />
@@ -150,6 +188,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CarTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="showServicesTree" value="false" />
@@ -174,7 +217,13 @@
       <workItem from="1572469203511" duration="785000" />
       <workItem from="1572722339241" duration="12048000" />
       <workItem from="1572734423852" duration="9046000" />
-      <workItem from="1572764782496" duration="2546000" />
+      <workItem from="1572764782496" duration="5706000" />
+      <workItem from="1572774099381" duration="5327000" />
+      <workItem from="1573595395998" duration="1765000" />
+      <workItem from="1573597191210" duration="1779000" />
+      <workItem from="1573683022622" duration="1765000" />
+      <workItem from="1573684822873" duration="1787000" />
+      <workItem from="1573767410533" duration="11000" />
     </task>
     <servers />
   </component>

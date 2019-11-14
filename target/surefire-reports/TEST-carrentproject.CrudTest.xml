@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.316" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="carrentproject.CrudTest" time="0.354" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
+    <property name="java.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-java8\4.7.2\cucumber-java8-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-java\4.7.2\cucumber-java-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-core\4.7.2\cucumber-core-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\Asus\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\Asus\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\Asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Asus\.m2\repository\net\jodah\typetools\0.5.0\typetools-0.5.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire3049689670376744668\surefirebooter3549141738144764.jar C:\Users\Asus\AppData\Local\Temp\surefire3049689670376744668 2019-11-03T08-49-10_543-jvmRun1 surefire3033831843759074850tmp surefire_06689352215514755493tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
+    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire3643561544645976897\surefirebooter5976881348947356135.jar C:\Users\Asus\AppData\Local\Temp\surefire3643561544645976897 2019-11-03T12-00-43_941-jvmRun1 surefire7925063756767979394tmp surefire_04625435384616850468tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\test-classes;C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\target\classes;C:\Users\Asus\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Asus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Asus\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-java8\4.7.2\cucumber-java8-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-java\4.7.2\cucumber-java-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-core\4.7.2\cucumber-core-4.7.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\Asus\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\Asus\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\Asus\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\Asus\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\Asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Asus\.m2\repository\net\jodah\typetools\0.5.0\typetools-0.5.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Asus"/>
     <property name="user.language" value="en"/>
@@ -28,11 +28,10 @@
     <property name="basedir" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp"/>
     <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="idea.version2019.2.3" value="true"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire3049689670376744668\surefirebooter3549141738144764.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire3643561544645976897\surefirebooter5976881348947356135.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,16 +60,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.053"/>
+  <testcase name="setTimesSaveToFalse_correct" classname="carrentproject.CrudTest" time="0.07"/>
   <testcase name="getReservedCarsById_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="getTimesByUserReservationId_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0"/>
+  <testcase name="getTimesByUserReservationId_correct" classname="carrentproject.CrudTest" time="0.001"/>
+  <testcase name="deleteReservedCarsById_correct" classname="carrentproject.CrudTest" time="0.001"/>
   <testcase name="addReservedCars_correct" classname="carrentproject.CrudTest" time="0"/>
   <testcase name="deleteReservedCars_no_element" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="addDateOverAddCollection_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="updateUserReservation_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="getAllReservedCars_correct" classname="carrentproject.CrudTest" time="0.015"/>
+  <testcase name="addDateOverAddCollection_correct" classname="carrentproject.CrudTest" time="0.01"/>
+  <testcase name="updateUserReservation_correct" classname="carrentproject.CrudTest" time="0.001"/>
+  <testcase name="getAllReservedCars_correct" classname="carrentproject.CrudTest" time="0.001"/>
   <testcase name="getReservationById_NoSuchElementException_expected" classname="carrentproject.CrudTest" time="0"/>
   <testcase name="updateDateOverUpdateObject_correct" classname="carrentproject.CrudTest" time="0"/>
-  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0"/>
+  <testcase name="readDataOnGetObject_correct" classname="carrentproject.CrudTest" time="0.001"/>
 </testsuite>

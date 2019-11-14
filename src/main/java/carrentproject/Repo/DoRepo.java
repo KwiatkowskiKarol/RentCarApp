@@ -1,7 +1,6 @@
 package carrentproject.Repo;
 
-import carrentproject.Model.User;
-import carrentproject.Model.UserReservation;
+import carrentproject.Model.CarReservation;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -16,23 +15,23 @@ public class DoRepo {
     private DoRepo() {
     }
 
-    private List<UserReservation> userReservations = new ArrayList<>();
+    private List<CarReservation> carReservations = new ArrayList<>();
 
-    public List<UserReservation> collectionAccess() {
-        return userReservations;
+    public List<CarReservation> collectionAccess() {
+        return carReservations;
     }
 
-    public void setUserReservations(List<UserReservation> userReservations) {
-        this.userReservations = userReservations;
+    public void setCarReservations(List<CarReservation> carReservations) {
+        this.carReservations = carReservations;
     }
 
-    public Optional<UserReservation> getReservationById(long id) {
+    public Optional<CarReservation> getReservationById(long id) {
 
-        return userReservations.stream().filter(x -> x.getReservationId().equals(id)).findFirst();
+        return carReservations.stream().filter(x -> x.getReservationId().equals(id)).findFirst();
 
     }
 
     public boolean isInRepoById(final long id) {
-        return userReservations.stream().anyMatch(u -> u.getReservationId().equals(id));
+        return carReservations.stream().anyMatch(u -> u.getReservationId().equals(id));
     }
 }

@@ -4,18 +4,16 @@ public class User {
     private Long id;
     private String name;
     private String surname;
-    private UserReservation userReservation;
+    private CarReservation carReservation;
 
 
-    public User() {
-
-    }
+    public User() { }
 
     public User (Long id, String name, String surname){
         this.id = id;
         this.name = name;
         this.surname = surname;
-        this.userReservation = new UserReservation();
+        this.carReservation = new CarReservation();
     }
 
     public Long getId() {
@@ -42,11 +40,11 @@ public class User {
         this.surname = surname;
     }
 
-    public UserReservation getUserReservation() {
-        return userReservation;
+    public CarReservation getCarReservation() {
+        return carReservation;
     }
 
-    public void setUserReservation(UserReservation userReservation) {
-        this.userReservation = userReservation;
+    public void setCarReservation(CarReservation carReservation) {
+        this.carReservation = carReservation;
     }
 }
