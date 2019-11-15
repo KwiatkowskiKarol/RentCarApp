@@ -5,9 +5,6 @@ Feature: Car_Reservation
     Then user can show <listOfReservation>
 
 Scenario: Delete car reservation
-  Given Delete car reservation
+  Given Delete car reservation <listOfReservation>
   When car reservation got own id
   Then user can delete reservation
-
-  #when User have id (account), can delete his own reservation
-

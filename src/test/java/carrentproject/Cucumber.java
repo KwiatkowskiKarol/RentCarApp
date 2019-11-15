@@ -18,9 +18,13 @@ public class Cucumber {
 
     private Crud crud = new Crud();
     private DoRepo repository = DoRepo.getInstance();
+
     private CarReservation carReservation;
+    private DeleteCarReservation deleteCarReservation;
 
     private boolean isRemoved;
+
+    private List<DeleteCarReservation> deleteCarReservations = new ArrayList<>();
     private List<CarReservation> carReservations = new ArrayList<>();
 
     //Create
@@ -41,14 +45,12 @@ public class Cucumber {
 
 
     //Delete
-    @Given("^Delete car reservation$")
-    public void deleteCarReservation() {
-        carReservation = new CarReservation();
-    }
+    @Given("^Delete car reservation (.*)$")
+    public void deleteCarReservation(ArrayList<String> deletedCars) { deleteCarReservation = new DeleteCarReservation(deletedCars);}
 
     @When("^car reservation got own id$")
     public void carReservationGotOwnId() { crud.getAllCarReservation(); }
 
     @Then("^user can delete reservation$")
-    public void userCanDeleteReservation() { crud.deleteCarReservation();}
+    public void userCanDeleteReservation( ){ deleteCarReservation = new DeleteCarReservation(); }
 }

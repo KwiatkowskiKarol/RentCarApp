@@ -55,7 +55,4 @@ public class CarReservation {
     public boolean isRecordTimes() { return recordTimes; }
 
     public void setRecordTimes(boolean recordTimes) { this.recordTimes = recordTimes; }
-
-    public void setDeletedCars(ArrayList<String> deletedCars) {
-    }
 }
