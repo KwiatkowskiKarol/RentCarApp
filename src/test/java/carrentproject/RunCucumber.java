@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = "pretty", features = "src/main/resources/")
+@CucumberOptions(plugin = "pretty", features = "src/test/java/")
 
-public class CarTest {
+public class RunCucumber {
 }

@@ -6,6 +6,7 @@ import carrentproject.Repo.DoRepo;
 
 import java.time.LocalDateTime;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Crud {
 
@@ -44,7 +45,7 @@ public class Crud {
     }
 
     public List<CarReservation> getAllUserReservation() {
-        return new ArrayList<CarReservation>(DoRepo.getInstance().collectionAccess());
+        return new ArrayList<>(DoRepo.getInstance().collectionAccess());
     }
 
     public CarReservation updateUser(Long id, CarReservation user){

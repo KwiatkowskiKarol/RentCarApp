@@ -2,33 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Asus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/UserSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/car.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CarReservation.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/Cucumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/carrentproject/RunCucumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservationDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Model/UserReservationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Model/CarReservationList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Repo/DoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Repo/DoRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carrentproject/CrudTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservationDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/UserReservationList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/UserSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/car.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carrentproject/CarTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/car.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carrentproject.CrudTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carrentproject.CrudTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/UserSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/CarTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,13 +65,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\src\main\resources" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="carrentproject" />
       <recent name="Service" />
       <recent name="Module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\src\test\java\carrentproject" />
+      <recent name="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,8 +87,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarTest">
-    <configuration name="CarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RunCucumber">
+    <configuration name="Scenario: New Car Reservation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/carrentproject/CarReservation.feature" />
+      <option name="GLUE" value="carrentproject" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="RentCarApp" />
+      <option name="NAME_FILTER" value="^New Car Reservation$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^New Car Reservation$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: New Car Reservation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCucumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RentCarApp" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +116,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="carrentproject" />
-      <option name="MAIN_CLASS_NAME" value="carrentproject.CarTest" />
+      <option name="MAIN_CLASS_NAME" value="carrentproject.RunCucumber" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
@@ -188,9 +194,15 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Cucumber java.Scenario: New Car Reservation" />
+      <item itemvalue="JUnit.RunCucumber" />
+      <item itemvalue="Maven.RentCarApp [test]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarTest" />
+        <item itemvalue="JUnit.RunCucumber" />
+        <item itemvalue="Cucumber java.Scenario: New Car Reservation" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +235,8 @@
       <workItem from="1573597191210" duration="1779000" />
       <workItem from="1573683022622" duration="1765000" />
       <workItem from="1573684822873" duration="1787000" />
-      <workItem from="1573767410533" duration="11000" />
+      <workItem from="1573767410533" duration="1676000" />
+      <workItem from="1573769216230" duration="1551000" />
     </task>
     <servers />
   </component>
