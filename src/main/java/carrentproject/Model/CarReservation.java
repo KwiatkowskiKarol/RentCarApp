@@ -1,7 +1,5 @@
 package carrentproject.Model;
 
-import carrentproject.Model.User;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -57,4 +55,7 @@ public class CarReservation {
     public boolean isRecordTimes() { return recordTimes; }
 
     public void setRecordTimes(boolean recordTimes) { this.recordTimes = recordTimes; }
+
+    public void setDeletedCars(ArrayList<String> deletedCars) {
+    }
 }
