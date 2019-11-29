@@ -3,10 +3,15 @@ package carrentproject.Service;
 import carrentproject.Model.CarReservation;
 import carrentproject.Model.CarReservationDate;
 import carrentproject.Repo.DoRepo;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 
+@Service
 public class Crud {
 
     public Crud() {
