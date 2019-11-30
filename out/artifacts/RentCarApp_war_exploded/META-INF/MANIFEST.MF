@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: Asus
+Build-Jdk: 1.8.0_144
+Implementation-Title: Car Rent
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: TAU
+Main-Class: ${start-class}
+

@@ -3,6 +3,9 @@ carrentproject\Model\CarReservation.class
 carrentproject\Repo\DoRepo.class
 carrentproject\Service\Crud.class
 carrentproject\Model\Car.class
+carrentproject\Model\DeleteCarReservation.class
+carrentproject\Web\CarReservationApi.class
 carrentproject\Model\User.class
 carrentproject\Model\CarReservationDate.class
+carrentproject\RestConfig.class
 carrentproject\Service\Factory.class
