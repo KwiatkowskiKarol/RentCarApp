@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="RentCarApp:jar" />
+      <artifact name="RentCarApp:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RentCarApp_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RentCarApp_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentCarApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RentCarApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_jar/RentCarApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentCarApp_jar/RentCarApp.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/classes/META-INF/RentCarApp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/lib/RentCarApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/lib/RentCarApp.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Service/Crud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RentCarApp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RentCarApp-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +224,13 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hello" />
       <option name="BROWSER_ID" value="53e2f627-b1a7-4dfa-bfa7-5b83cc034776" />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="RentCarApp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/RentCarApp_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_29_RentCarApp" />
       </server-settings>
@@ -288,6 +289,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="RentCarApp:war exploded" />
+        </option>
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk-13">
@@ -446,7 +450,7 @@
       <workItem from="1575055025681" duration="7681000" />
       <workItem from="1575062759084" duration="3501000" />
       <workItem from="1575132254229" duration="2691000" />
-      <workItem from="1575135012744" duration="472000" />
+      <workItem from="1575135012744" duration="1067000" />
     </task>
     <servers />
   </component>
