@@ -7,11 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3a1a8f6-9a66-443a-855c-510bbc26d937" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Selenium/FailedRegistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Selenium/FieldsValidationWithResponResponsiveness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Selenium/RunSelenium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Selenium/SimpleWebTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/carrentproject/Selenium/SuccessfulRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_jar/RentCarApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentCarApp_jar/RentCarApp.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/classes/META-INF/RentCarApp.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/lib/RentCarApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentCarApp_war_exploded/WEB-INF/lib/RentCarApp.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservationDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservationDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservationList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/CarReservationList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/DeleteCarReservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/DeleteCarReservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Repo/DoRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/RestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/RestConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Crud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Service/Factory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carrentproject/Web/CarReservationApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carrentproject/Web/CarReservationApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/CrudTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/Cucumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/Cucumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carrentproject/RunCucumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carrentproject/RunCucumber.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +73,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -70,11 +87,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$USER_HOME$/AppData/Roaming/npm/node_modules/grunt-cli" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/carrentproject" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../selenium-server-standalone-3.141.59.jar" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4828629" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
@@ -102,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
+  <component name="RunManager" selected="JAR Application.Unnamed">
     <configuration name="RestConfig" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-13.0.1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -167,6 +184,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../selenium-server-standalone-3.141.59.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Asus\Desktop\pjwstk\sem7\TAU\RentCarApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
     </configuration>
     <configuration name="RentCarApp [test]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -289,9 +312,6 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="RentCarApp:war exploded" />
-        </option>
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk-13">
@@ -396,6 +416,7 @@
     <list>
       <item itemvalue="Application.RestConfig" />
       <item itemvalue="Cucumber java.Scenario: New Car Reservation" />
+      <item itemvalue="JAR Application.Unnamed" />
       <item itemvalue="JUnit.RunCucumber" />
       <item itemvalue="Maven.RentCarApp [test]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
@@ -450,7 +471,12 @@
       <workItem from="1575055025681" duration="7681000" />
       <workItem from="1575062759084" duration="3501000" />
       <workItem from="1575132254229" duration="2691000" />
-      <workItem from="1575135012744" duration="1067000" />
+      <workItem from="1575135012744" duration="1203000" />
+      <workItem from="1576009422173" duration="313000" />
+      <workItem from="1576011143528" duration="3012000" />
+      <workItem from="1576014271657" duration="590000" />
+      <workItem from="1576014889822" duration="961000" />
+      <workItem from="1576183697845" duration="464000" />
     </task>
     <servers />
   </component>
